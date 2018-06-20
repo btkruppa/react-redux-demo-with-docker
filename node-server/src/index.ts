@@ -11,7 +11,7 @@ app.set('port', port);
 
 // allow static content to be served, navigating to url with nothing after / will serve index.html from public
 app.use(
-  express.static(path.join(__dirname, 'public'))
+  express.static(path.join(__dirname, 'build'))
 );
 
 app.listen(port, () => {
